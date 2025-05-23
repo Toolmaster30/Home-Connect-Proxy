@@ -1,0 +1,20 @@
+{
+  "name": "Home Connect Proxy",
+  "version": "1.0",
+  "slug": "home_connect_proxy",
+  "description": "Proxy für Home Connect API mit automatischer Token-Nutzung",
+  "arch": ["amd64", "armv7", "armhf", "aarch64"],
+  "startup": "application",
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "5000/tcp": 5000
+  },
+  "webui": "http://[HOST]:5000",
+  "map": [
+    "config:ro",
+    "ssl",
+    "addons"
+  ]
+}
